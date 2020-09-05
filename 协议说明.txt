@@ -1,0 +1,4 @@
+CAN Protocol WF:电源主控板<>送丝板
+CAN Protocol External:外部通信协议（自动焊控制器）
+CAN Protocol Panel:电源主控板<>面板
+CAN Protocol ROBOTIF:电源主控板<>机器人转接板
