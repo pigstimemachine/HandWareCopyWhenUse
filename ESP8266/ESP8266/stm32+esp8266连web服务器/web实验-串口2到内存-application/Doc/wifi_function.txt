@@ -1,0 +1,17 @@
+
+
+1    void        ESP8266_Choose  ( FunctionalState enumChoose );                                                                             //描述  ：使能/禁用WF-ESP8266模块
+2    void        ESP8266_Rst       ( void );                                                                                                 //描述  ：重启WF-ESP8266模块
+3    void        ESP8266_AT_Test   ( void );                                                                                                 //描述  ：对WF-ESP8266模块进行AT测试启动
+4    bool        ESP8266_Cmd       ( char * cmd, char * reply1, char * reply2, u32 waittime );                                               //描述  ：对WF-ESP8266模块发送AT指令
+5    bool        ESP8266_Net_Mode_Choose      ( ENUM_Net_ModeTypeDef enumMode );                                                             //描述  ：选择WF-ESP8266模块的工作模式
+6    bool        ESP8266_JoinAP               ( char * pSSID, char * pPassWord );                                                            //描述  ：WF-ESP8266模块连接外部WiFi
+7    bool        ESP8266_BuildAP              ( char * pSSID, char * pPassWord, char * enunPsdMode );                                        //描述  ：WF-ESP8266模块创建WiFi热点
+8    bool        ESP8266_Enable_MultipleId    ( FunctionalState enumEnUnvarnishTx );                                                         //描述  ：WF-ESP8266模块启动多连接
+9    bool        ESP8266_Link_Server          ( ENUM_NetPro_TypeDef enumE, char * ip, char * ComNum, ENUM_ID_NO_TypeDef id);                 //描述  ：WF-ESP8266模块连接外部服务器
+10   bool        ESP8266_StartOrShutServer    ( FunctionalState enumMode, char * pPortNum, char * pTimeOver );                               //描述  ：WF-ESP8266模块开启或关闭服务器模式
+11   bool        ESP8266_SendString           ( FunctionalState enumEnUnvarnishTx, char * pStr, u32 ulStrLength, ENUM_ID_NO_TypeDef ucId );  //描述  ：WF-ESP8266模块发送字符串
+12   char *      ESP8266_ReceiveString        ( FunctionalState enumEnUnvarnishTx );                                                         //描述  ：WF-ESP8266模块接收字符串
+13   void        ESP8266_STA_TCP_Client              ( void );                                                                               //描述  ：WF-ESP8266模块进行STA TCP Clien测试
+14   void        ESP8266_AP_TCP_Server               ( void );                                                                               //描述  ：WF-ESP8266模块进行AP TCP Server测试
+15   void        ESP8266_StaTcpClient_ApTcpServer    ( void );                                                                               //描述  ：WF-ESP8266模块进行STA(TCP Client)+AP(TCP Server)测试

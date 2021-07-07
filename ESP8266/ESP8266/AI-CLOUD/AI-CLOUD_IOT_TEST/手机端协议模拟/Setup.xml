@@ -1,0 +1,17 @@
+﻿<Config>
+
+<!-- 交换服务端口-->
+<ProxyPort>6009</ProxyPort>
+<!-- 交换服务IP-->
+
+<ProxyIP>121.41.97.28</ProxyIP>
+<!--
+<ProxyIP>127.0.0.1</ProxyIP>
+-->
+
+<!--网络超时-->
+<SocketTimeout>120</SocketTimeout>
+
+<!--开启日志-->
+<LogEnabled>1</LogEnabled>
+</Config>

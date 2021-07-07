@@ -1,0 +1,42 @@
+请求
+
+GET /index.php?s=/Mobile/PrinterTest/index HTTP/1.1
+Host: eat.weixincore.com
+User-Agent: abc
+Connection: close
+\r\n    
+
+响应
+
+>HTTP/1.1 200 OK
+Date: Wed, 15 Apr 2015 11:23:13 GMT
+Server: Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1
+X-Powered-By: PHP/5.5.1
+Set-Cookie: PHPSESSID=ierfmbf20vvir6k2geatbpn0g3; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 522
+Connection: close
+Content-Type: text/html
+
+
+host
+	192.168.191.4:8080
+connection
+	keep-alive
+cache-control
+	max-age=0
+accept
+	text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+user-agent
+	Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MI 4LTE Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 XiaoMi/MiuiBrowser/2.1.1
+accept-encoding
+	gzip, deflate
+accept-language
+	zh-CN,en-US;q=0.8
+	
+备注：wifi传来的数据，通过usart2的两个中断存到strEsp8266_Fram_Record .Data_RX_BUF[1024]中，但是波特率为9600时，要延时1.5s才能存储完。
+
+
