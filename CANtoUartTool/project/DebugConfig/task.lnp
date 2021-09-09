@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+".\debugconfig\delay.o"
+".\debugconfig\sys.o"
+".\debugconfig\usart.o"
+".\debugconfig\timer.o"
+".\debugconfig\taskmgr.o"
+".\debugconfig\main.o"
+".\debugconfig\lib.o"
+"D:\keil5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Lib\ARM\arm_cortexM3l_math.lib"
+".\debugconfig\startup_stm32f10x_md.o"
+".\debugconfig\system_stm32f10x.o"
+--strict --scatter ".\DebugConfig\task.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\task.map" -o .\DebugConfig\task.axf
